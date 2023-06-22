@@ -32,69 +32,77 @@ p {
 
 /* Main section */
 main {
-  grid-column: 2 / 3; }
+  grid-column: 2 / 3;
+  margin: 0 auto; }
 
-.main {
-  width: 95vh;
+.header__main {
+  position: relative; }
+
+.header__video {
+  display: inline-block;
+  width: 110rem;
+  height: 100%;
   margin: 0 auto;
-  position: relative;
+  border-radius: 1.4rem;
+  -webkit-border-radius: 1.4rem;
+  -moz-border-radius: 1.4rem;
+  -ms-border-radius: 1.4rem;
+  -o-border-radius: 1.4rem;
   overflow: hidden; }
-  .main__video {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    border-radius: 2.6rem;
-    -webkit-border-radius: 2.6rem;
-    -moz-border-radius: 2.6rem;
-    -ms-border-radius: 2.6rem;
-    -o-border-radius: 2.6rem; }
 
-.main__video-friends {
+.header__description__friends {
   position: absolute;
-  top: 2%;
-  padding: 3.2rem;
+  top: 4%;
+  padding: 2.4rem 0 0 3.4rem;
   display: flex;
   align-items: center;
-  gap: 3.2rem; }
+  gap: 2.4rem; }
 
-.img-friends {
+.friends {
+  display: flex; }
+
+.friend-img {
+  width: 3.4rem;
+  height: 3.4rem; }
+  .friend-img:not(:first-of-type) {
+    margin-left: -1rem; }
+
+.img-friend {
+  width: 100%;
+  height: 100%;
   display: inline-block;
-  width: 3.2rem;
-  height: 3.2rem;
-  margin-left: -1rem; }
-  .img-friends .img-friend {
-    border: 1px solid #fff;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%; }
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 1px solid #fff; }
 
-.main__video-description {
+.header__description {
   position: absolute;
-  bottom: 1%;
-  width: 70%;
-  padding: 3.2rem;
-  color: #c7ced5; }
-  .main__video-description-tittle {
+  bottom: 4%;
+  padding: 0 0 2.4rem 3.4rem;
+  color: #c7ced5;
+  /*   box-shadow: inset 0 22rem 2rem rgba(0, 0, 0, 0.35);
+  width: 120rem; */ }
+  .header__description-tittle {
     font-weight: 800;
     font-size: 3.6rem; }
-  .main__video-description-p {
-    font-weight: 400;
-    font-size: 1.4rem;
+  .header__description-p {
+    display: inline-block;
+    width: 70%;
+    font-size: 1.8rem;
     margin-top: 0.8rem; }
-  .main__video-description-buttons {
-    margin-top: 1.6rem;
-    display: flex;
-    align-items: center;
-    gap: 1.2rem; }
+
+.header__description-btns {
+  margin-top: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem; }
 
 /* Variablaes buttons */
 /* Main buttons */
-.btn-friends-btn {
+.btn-friends {
   display: inline-block;
   border: none;
   padding: .8rem 1.6rem;
