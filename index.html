@@ -11,6 +11,55 @@
       <header>fef</header>
 
       <main class="header">
+        <!-- Header form -->
+        <div class="form__header">
+          <form class="header__form">
+            <input
+              type="text"
+              id="search"
+              placeholder="Search..."
+              autocomplete="off"
+              class="header__search"
+            />
+            <label for="search" class="header__label">
+              <ion-icon
+                name="search-circle-outline"
+                class="form__icon"
+              ></ion-icon>
+            </label>
+          </form>
+
+          <!-- User -->
+          <section class="header__user">
+            <div class="header__icon">
+              <ion-icon
+                name="notifications-circle-outline"
+                class="icon-user"
+              ></ion-icon>
+            </div>
+
+            <div class="header__icon">
+              <div class="header__icon">
+                <ion-icon
+                  name="chatbubble-outline"
+                  class="icon-user"
+                ></ion-icon>
+              </div>
+            </div>
+
+            <section class="user__info">
+              <figure class="user__img">
+                <img
+                  src="Img/Usuario.jpg"
+                  alt="usuario"
+                  loading="lazy"
+                  class="usuario-img"
+                />
+              </figure>
+              <h1 class="user__name">Fernando</h1>
+            </section>
+          </section>
+        </div>
         <section class="header__main">
           <video
             src="One-piece.mp4"
@@ -368,5 +417,15 @@
         <a href="#" class="footer__link">Fernando Ivan Barrios Espinosa</a>
       </footer>
     </div>
+
+    <!-- Js icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
