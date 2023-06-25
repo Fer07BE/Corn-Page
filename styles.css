@@ -19,20 +19,12 @@ html {
       font-size: 50%;
       /* 8px / 16rem */ } }
 
-body {
-  hyphens: auto;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  font-family: sans-serif; }
-
 p {
   line-height: 1.5; }
 
 /* Variables */
 /* Space */
 /* Responsive */
-/* $media-1618px: 102em; */
 *::selection {
   background: #db1e21;
   color: #c7ced5; }
@@ -59,16 +51,16 @@ p {
 
 /* Section page */
 body {
+  font-family: sans-serif;
   padding: 4.8rem;
   background: #dee2e4;
-  /* Responsive */
-  /* @media only screen and (max-width: $media-1618px) {
-    padding: 2.4rem;
-    padding: 1.6rem;
-  } */
-  /* Responsive */
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  /*Responsive*/
   /* Responsive */ }
-  @media only screen and (max-width: 82em) {
+  @media onlyscreen and (max-width: 82em) {
     body {
       padding: 1.6rem; } }
   @media only screen and (max-width: 72em) {
@@ -86,9 +78,6 @@ body {
   -o-border-radius: 1.4rem;
   overflow: hidden;
   top: 5%;
-  /* @media only screen and (max-width: $media-1618px) {
-    grid-template-columns: 0.45fr 2fr;
-  } */
   /* Responsive */
   /* Responsive */ }
   @media only screen and (max-width: 85em) {
@@ -134,9 +123,6 @@ main {
   -ms-border-radius: 1.4rem;
   -o-border-radius: 1.4rem;
   overflow: hidden;
-  /* @media only screen and (max-width: $media-1618px) {
-    width: 80%;
-  } */
   /* Responsive */ }
   @media only screen and (max-width: 74em) {
     .header__video {
@@ -275,6 +261,7 @@ main {
   /* Responsive */ }
   @media only screen and (max-width: 72em) {
     .header__comunity-cards {
+      display: grid;
       grid-template-columns: repeat(2, 1fr); } }
   @media only screen and (max-width: 42em) {
     .header__comunity-cards {
@@ -423,6 +410,7 @@ main {
   /* Responsive */ }
   @media only screen and (max-width: 72em) {
     .cards__watching {
+      display: grid;
       grid-template-columns: repeat(2, 1fr); } }
   @media only screen and (max-width: 69em) {
     .cards__watching {
@@ -449,6 +437,7 @@ main {
   /* Responsive */ }
   @media only screen and (max-width: 72em) {
     .card__watch {
+      width: 100%;
       display: grid;
       grid-template-columns: 0.5fr 1fr;
       align-items: center;
@@ -769,6 +758,7 @@ main {
   /* Responsive */
   /* Responsive */
   /* Responsive */
+  /* Responsive */
   /* Responsive */ }
   @media only screen and (max-width: 82em) {
     .header__search:focus ~ label .form__icon {
@@ -782,6 +772,9 @@ main {
   @media only screen and (max-width: 61em) {
     .header__search:focus ~ label .form__icon {
       left: 82%; } }
+  @media only screen and (max-width: 46em) {
+    .header__search:focus ~ label .form__icon {
+      left: 81.7%; } }
   @media only screen and (max-width: 42em) {
     .header__search:focus ~ label .form__icon {
       left: 81.3%; } }
@@ -814,6 +807,7 @@ main {
   /* Responsive */
   /* Responsive */
   /* Responsive */
+  /* Responsive */
   /* Responsive */ }
   @media only screen and (max-width: 82em) {
     .form__icon {
@@ -827,6 +821,9 @@ main {
   @media only screen and (max-width: 61em) {
     .form__icon {
       left: 77%; } }
+  @media only screen and (max-width: 46em) {
+    .form__icon {
+      left: 76.5%; } }
   @media only screen and (max-width: 42em) {
     .form__icon {
       left: 76%; } }
@@ -1106,8 +1103,8 @@ main {
 @media only screen and (max-width: 85em) {
   .section__user-label {
     position: fixed;
-    right: 3%;
-    top: 5%;
+    right: 4%;
+    top: 7%;
     width: 5.2rem;
     height: 5.2rem;
     background: #db1e21;
@@ -1123,12 +1120,7 @@ main {
     /* Responsive */
     /* Responsive */
     /* Responsive */
-    /* Responsive */
     /* Responsive */ } }
-  @media only screen and (max-width: 85em) and (max-width: 85em) {
-    .section__user-label {
-      top: 4%;
-      right: 2.5%; } }
   @media only screen and (max-width: 85em) and (max-width: 82em) {
     .section__user-label {
       top: 3.3%;
@@ -1198,6 +1190,7 @@ main {
 
 @media only screen and (max-width: 85em) {
   .section__user-label:hover::before {
+    height: 0.21rem;
     top: 60%;
     left: 45%;
     transform: rotate(220deg) translate(50%, -60%);
@@ -1647,7 +1640,7 @@ li {
   -o-border-radius: 1.4rem;
   position: relative;
   /* Responsive */ }
-  @media only screen and (max-width: 74em) {
+  @media only screen and (max-width: 1510px) {
     .card__download {
       display: none; } }
 
